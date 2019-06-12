@@ -15,7 +15,12 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <ZendeskProviderSDK/ZDKNavBarConversationsUIType.h>
+
+#if MODULES_DISABLED
+#import <ZendeskProviderSDK/ZendeskProviderSDK.h>
+#else
+@import ZendeskProviderSDK;
+#endif
 
 /**
  Used to select where conversations nav bar button will be active.
