@@ -15,7 +15,11 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <ZendeskProviderSDK/ZDKNavBarConversationsUIType.h>
+#if MODULES_DISABLED
+#import <ZendeskProviderSDK/ZendeskProviderSDK.h>
+#else
+@import ZendeskProviderSDK;
+#endif
 #import <UIKit/UIKit.h>
 
 /**
